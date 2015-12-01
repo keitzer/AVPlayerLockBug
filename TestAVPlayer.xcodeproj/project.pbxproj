@@ -15,6 +15,8 @@
 		FED2E1AA1C0D4B5A00D3A850 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FED2E1A81C0D4B5A00D3A850 /* LaunchScreen.storyboard */; };
 		FED2E1B51C0D4B5A00D3A850 /* TestAVPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED2E1B41C0D4B5A00D3A850 /* TestAVPlayerTests.m */; };
 		FED2E1C01C0D4B5B00D3A850 /* TestAVPlayerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FED2E1BF1C0D4B5B00D3A850 /* TestAVPlayerUITests.m */; };
+		FED2E1CE1C0D5DAB00D3A850 /* output.mov in Resources */ = {isa = PBXBuildFile; fileRef = FED2E1CD1C0D5DAB00D3A850 /* output.mov */; };
+		FED2E1D11C0D5E1400D3A850 /* FITPlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = FED2E1D01C0D5E1400D3A850 /* FITPlayerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,9 @@
 		FED2E1BB1C0D4B5B00D3A850 /* TestAVPlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TestAVPlayerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FED2E1BF1C0D4B5B00D3A850 /* TestAVPlayerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestAVPlayerUITests.m; sourceTree = "<group>"; };
 		FED2E1C11C0D4B5B00D3A850 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FED2E1CD1C0D5DAB00D3A850 /* output.mov */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = output.mov; sourceTree = "<group>"; };
+		FED2E1CF1C0D5E1400D3A850 /* FITPlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FITPlayerView.h; sourceTree = "<group>"; };
+		FED2E1D01C0D5E1400D3A850 /* FITPlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FITPlayerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,8 +108,11 @@
 			children = (
 				FED2E19D1C0D4B5A00D3A850 /* AppDelegate.h */,
 				FED2E19E1C0D4B5A00D3A850 /* AppDelegate.m */,
+				FED2E1CD1C0D5DAB00D3A850 /* output.mov */,
 				FED2E1A01C0D4B5A00D3A850 /* ViewController.h */,
 				FED2E1A11C0D4B5A00D3A850 /* ViewController.m */,
+				FED2E1CF1C0D5E1400D3A850 /* FITPlayerView.h */,
+				FED2E1D01C0D5E1400D3A850 /* FITPlayerView.m */,
 				FED2E1A31C0D4B5A00D3A850 /* Main.storyboard */,
 				FED2E1A61C0D4B5A00D3A850 /* Assets.xcassets */,
 				FED2E1A81C0D4B5A00D3A850 /* LaunchScreen.storyboard */,
@@ -246,6 +254,7 @@
 				FED2E1AA1C0D4B5A00D3A850 /* LaunchScreen.storyboard in Resources */,
 				FED2E1A71C0D4B5A00D3A850 /* Assets.xcassets in Resources */,
 				FED2E1A51C0D4B5A00D3A850 /* Main.storyboard in Resources */,
+				FED2E1CE1C0D5DAB00D3A850 /* output.mov in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FED2E1A21C0D4B5A00D3A850 /* ViewController.m in Sources */,
+				FED2E1D11C0D5E1400D3A850 /* FITPlayerView.m in Sources */,
 				FED2E19F1C0D4B5A00D3A850 /* AppDelegate.m in Sources */,
 				FED2E19C1C0D4B5A00D3A850 /* main.m in Sources */,
 			);
