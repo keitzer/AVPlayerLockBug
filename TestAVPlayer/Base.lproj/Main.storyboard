@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9051"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -28,6 +29,12 @@
                                             <constraint firstAttribute="width" constant="6400" id="C0E-Nv-zZh"/>
                                             <constraint firstAttribute="height" constant="568" id="Iex-Bx-lgq"/>
                                         </constraints>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="C0E-Nv-zZh"/>
+                                                <exclude reference="Iex-Bx-lgq"/>
+                                            </mask>
+                                        </variation>
                                     </view>
                                 </subviews>
                                 <animations/>
@@ -38,14 +45,39 @@
                                     <constraint firstAttribute="bottom" secondItem="Ian-6h-PfO" secondAttribute="bottom" id="emY-XN-uhf"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dnY-FB-m4m">
+                                <rect key="frame" x="45" y="518" width="231" height="30"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96078431369999995" green="0.34901960780000002" blue="0.4431372549" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="4Td-A9-iC7"/>
+                                    <constraint firstAttribute="width" constant="231" id="8eS-zh-lSy"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Futura-Medium" family="Futura" pointSize="15"/>
+                                <state key="normal" title="Pause All Videos">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="6"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="pauseAllVideos" destination="BYZ-38-t0r" eventType="touchUpInside" id="eSi-Nz-7Me"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="N07-G7-LfP" secondAttribute="trailing" id="3F1-zq-EDu"/>
+                            <constraint firstItem="dnY-FB-m4m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6do-ez-KS9"/>
+                            <constraint firstItem="Ian-6h-PfO" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" id="BZx-uN-dLP"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="N07-G7-LfP" secondAttribute="bottom" id="L8a-Hi-xV1"/>
                             <constraint firstItem="N07-G7-LfP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="OC0-yT-2az"/>
                             <constraint firstItem="N07-G7-LfP" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fb8-Q1-SE9"/>
+                            <constraint firstItem="Ian-6h-PfO" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="20" id="gOw-h5-gBH"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dnY-FB-m4m" secondAttribute="bottom" constant="20" id="iRF-iW-Z8K"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -56,6 +88,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="243" y="166"/>
         </scene>
     </scenes>
 </document>

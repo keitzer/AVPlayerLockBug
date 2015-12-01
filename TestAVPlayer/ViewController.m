@@ -45,9 +45,10 @@
 }
 
 - (void)addPlayerToScreen:(AVPlayer *)player {
+	CGSize winSize = [UIScreen mainScreen].bounds.size;
 	
-	FITPlayerView *newView = [[FITPlayerView alloc] initWithFrame:CGRectMake((self.playerArray.count-1)*320, 0, 320, 568)];
-	UIButton *play = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 320, 568)];
+	FITPlayerView *newView = [[FITPlayerView alloc] initWithFrame:CGRectMake((self.playerArray.count-1)*winSize.width, 0, winSize.width, winSize.height)];
+	UIButton *play = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, winSize.width, winSize.height)];
 	[play addTarget:self action:@selector(playVideoAtIndex:) forControlEvents:UIControlEventTouchUpInside];
 	play.tag = self.playerArray.count-1;
 	[newView addSubview:play];
@@ -117,4 +118,10 @@
 	
 }
 
+
+-(IBAction)pauseAllVideos {
+	for (AVPlayer *player in self.playerArray) {
+		[player pause];
+	}
+}
 @end
